@@ -823,7 +823,7 @@ textarea {
     }
 
     .cont-labels input {
-        height:4vh;
+        height:25px;
     }
 
     legend {
@@ -835,7 +835,7 @@ textarea {
     .btn-form {
         margin-top: 3vh;
         width: 20vw;
-        height: 5vh;
+        height: 30px;
         font-size: 16px;
         color: rgb(31, 30, 30);
         background-color: rgba(0, 255, 194, 1);
