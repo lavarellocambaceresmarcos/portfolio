@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Sulphur Point', sans-serif;
+    scroll-behavior:smooth;
 }
 
 a{
@@ -28,6 +29,12 @@ header {
     display: flex;
     align-items: center;
     height: 20vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    opacity: .7;
+    box-shadow: 5px 0 10px rgba(0,0,0,.6)
 }
 
 /* Heading styles */
@@ -41,7 +48,7 @@ header nav {
     width: 70vw;
     display: flex;
     justify-content: center;
-    margin-left: 3vw;
+    margin-left: 10vw;
     
 }
 
@@ -64,7 +71,6 @@ header nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 .cont-link .link-nav {
@@ -124,7 +130,6 @@ header nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 
@@ -222,6 +227,30 @@ header nav ul li {
 }
 
 
+/*  ----------------> menu interactivo <------------------------------------- */
+
+
+
+/* estilos del menu interactivo */
+
+.btn_menu {
+    font-size: 2rem;
+    color: rgba(0, 255, 194, 1);
+    cursor: pointer;
+    display: none;
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+ul.show {
+    top: 15vh; 
+}
+
+
+
 
 
 /* estilos de la primera section */
@@ -286,7 +315,6 @@ header nav ul li {
     align-items: center;
     width: 90vw;
     margin-top: 10vh;
-    display: flex;
 }
 
 .foto {
@@ -517,12 +545,13 @@ legend {
     margin-top: 3vh;
     width: 8vw;
     height: 5vh;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: rgb(31, 30, 30);
     background-color: rgba(0, 255, 194, 1);
     border: none;
     font-weight: 500;
     border-radius: .3vw;
+    cursor: pointer;
 }
 
 textarea {
@@ -550,5 +579,296 @@ textarea {
 }
 
 
+.proyectos-mobile {
+    display: none;
+}
 
 
+
+/*  MEDIA querys ---------> inicio del formato responsivo */
+
+
+
+
+
+@media screen and (max-width:858px) {
+
+    header {
+        height:15vh;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    .logo {
+        height:2.5rem;
+    }
+
+    .btn_menu {
+        display: block;
+    }
+
+    .menu_items {
+        position: fixed;
+        width: 100%;
+        background: rgba(32, 38, 60, 1);
+        top: -100vh;
+        left: 0;
+        transition: all .4s;
+        flex-direction: column;
+        padding-bottom: 10vh;
+    }
+
+
+    
+    .cont-link .link-nav {
+        font-size: 16px;
+        padding-bottom: 5vh;
+    }
+
+
+    .cont-btn .btn-contacto {
+        font-size: 16px;
+    }
+
+
+    /* Encabezado principal */
+
+    
+    .cont-encabezados-1 div {
+        width: 60vw;
+    }
+
+    .encabezado-principal {
+        font-size: 25px;
+    }
+
+    .encabezado-principal-h2 {
+        font-size: 18px;
+    }
+
+
+    /* Encabezado "sobre mi" */
+
+    .sobre-mi {
+        font-size: 25px;
+    }
+
+    /* Estilos de la sección "sobre mi" */
+    
+    .cont-foto-lista {
+        flex-direction: column;
+    }
+
+    
+    .lista-foto li  {
+        font-size: 14px;
+    }
+
+    
+    .lista-foto {
+        width: 70%;
+    }
+        
+    .foto {
+        height: 40vw;
+    }
+
+
+    /* Encabezado "herramientas" */
+
+    .cont-herramientas {
+        margin-top: 20vh;
+    }
+
+    .herramientas {
+        font-size: 25px;
+    }
+
+
+    /* lista de herramientas */
+
+    .lista-herramientas {
+        font-size: 30px;
+        width: 80vw;
+        margin-left: 3vw;
+    }
+
+
+    /* Estilos de la sección de "proyectos" mobile */
+
+
+    .cont-total-section-productos {
+        display: none;
+    }
+
+
+    .proyectos-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .proyectos-mobile__img {
+        width: 70vw;
+    }
+
+
+    .proyectos-mobile__div-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        text-align: left;
+        margin-top: 15vh;
+    }
+
+    .proyectos-mobile__titulo {
+        color: rgba(0, 255, 194, 1);
+        margin-bottom: 2vh;
+        font-size: 18px;
+    }
+
+    .proyectos-mobile__item-lista {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .proyectos-mobile__lista {
+        margin-top: 3vh;
+    }
+
+
+    /* Estilos "experiencia" */
+
+    .encab-list {
+        font-size: 18px;
+    }
+
+    .encab-list-2 {
+        font-size: 16px;
+    }
+
+    .lista-exp li {
+        font-size: 14px;
+    }
+    
+    .cont-exp-lista {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 10vh;
+        display: flex;
+    }
+
+    .lista-exp li {
+        width: 60vw;
+        margin-top: 1vh;
+        color: #fff;
+    }
+
+    /* Estilos de la sección contacto */
+
+    .contacto {
+        font-size: 25px;
+    }
+
+    .lista-cont-1 li {
+        font-size: 20px;
+    }
+
+    .lista-cont-2 li {
+        font-size: 20px;
+    }
+
+    .cont-listas-contacto ul li  i {
+        font-size: 20px;
+    }
+    
+
+    /* Estilos del formulario */
+
+    form {
+        width:70vw;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    fieldset {
+        margin: 3vw;
+        width: 70vw;
+        border: none;
+        background-color: rgba(37, 53, 79, 1);
+        border-radius:1vw;
+        padding: 2vw;
+        z-index: 2;
+    }
+
+    .cont-labels {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        margin-top: 3vh;
+        font-size: 14px;
+    }
+
+    .cont-labels input {
+        height:4vh;
+    }
+
+    legend {
+        font-size: 16px;
+        color: rgba(0, 255, 194, 1);
+        font-weight: bold;
+    }
+
+    .btn-form {
+        margin-top: 3vh;
+        width: 20vw;
+        height: 5vh;
+        font-size: 16px;
+        color: rgb(31, 30, 30);
+        background-color: rgba(0, 255, 194, 1);
+        border: none;
+        font-weight: 500;
+        border-radius: .3vw;
+        cursor: pointer;
+    }
+
+    textarea {
+        resize: none;
+        height: 30vh;
+    }
+
+
+    .cont-form {
+        margin-top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .barra-final {
+        background-color:rgba(0, 255, 194, 1);
+        height: .5vh;
+        border: none;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+
+
+
+}

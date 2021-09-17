@@ -11,37 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/menu.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <!-- <header>
-        <div>
-            <a href="index.html"> 
-                <img src="/img/logo.png" alt="" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Herramientas</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Experiencia</a></li>
-            </ul>
-        </nav>
-        <a href="" class="btn-contacto">Contactar</a>
-    </header> -->
     <header>
         <div>
             <a href="index.html"> 
                 <img src="/img/logo.png" alt="" class="logo">
             </a>
         </div>
-        <nav>
-            <ul>
+        <nav class="menu">
+            <ul class="menu_items">
                 <li>
                     <div class="cont-link">
-                        <a href="" class="link-nav">
+                        <a href="#inicio" class="link-nav">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -52,7 +37,7 @@
                 </li>
                 <li>
                     <div class="cont-link">
-                        <a href="" class="link-nav">
+                        <a href="#herramientas" class="link-nav">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -63,7 +48,7 @@
                 </li>
                 <li>
                     <div class="cont-link">
-                        <a href="" class="link-nav">
+                        <a href="#proyectos" class="link-nav">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -74,7 +59,7 @@
                 </li>
                 <li>
                     <div class="cont-link">
-                        <a href="" class="link-nav">
+                        <a href="#experiencia" class="link-nav">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -83,22 +68,27 @@
                         </a>
                     </div>
                 </li>
+                <li>
+                    <div class="cont-btn">
+                        <a href="#contacto" class="btn-contacto">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Contactar
+                        </a>
+                    </div>
+                </li>
             </ul>
+            <span class="btn_menu">
+                <i class="fa fa-bars"></i>
+            </span>
         </nav>
-        <div class="cont-btn">
-            <a href="" class="btn-contacto">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Contactar
-            </a>
-        </div>
     </header>
     <main>
         <section class="cont-encabezados-1">
-            <div class="">   
-                <h1 class="encabezado-principal">Marcos Lavarello</h1>
+            <div>   
+                <h1 class="encabezado-principal" id="inicio">Marcos Lavarello</h1>
                 <h2 class="encabezado-principal-h2">Diseñador web</h2>
             </div>
             <hr class="barra-1">
@@ -132,7 +122,7 @@
         </section>
         <section class="cont-encabezados-1 cont-herramientas">
             <div>   
-                <h2 class="herramientas">Herramientas</h2>
+                <h2 class="herramientas" id="herramientas">Herramientas</h2>
             </div>
             <hr class="barra-1">
         </section>
@@ -162,13 +152,16 @@
             </ul>
         </section>
         <section class="cont-sobre-mi">
-            <h2 class="sobre-mi">Proyectos</h2>
+            <h2 class="sobre-mi" id="proyectos">Proyectos</h2>
             <hr class="barra-2">
         </section>
+        <!-- sección proyectos - escritorio  -->
         <section class="cont-total-section-productos">
 
             <div class="cont-card-proyecto">
-                <img src="/img/sorgetti.png" alt="" class="imagen-proyectos">
+                <a href="https://lavarellocambaceresmarcos.github.io/eugeniasorgetti/" target="_blank">
+                    <img src="/img/sorgetti.png" alt="" class="imagen-proyectos">
+                </a>
                 <ul class="lista-proyectos">
                     <p class="titulo-lista">Portfolio web de diseño</p>
                     <li class="item-lista-proyectos">
@@ -193,10 +186,14 @@
                         voluptas?
                     </li>
                 </ul>
-                <img src="/img/laprevia.png" alt="" class="imagen-proyectos">
+                <a href="https://lavarellocambaceresmarcos.github.io/laprevia.com/" target="_blank">
+                    <img src="/img/laprevia.png" alt="" class="imagen-proyectos">
+                </a>
             </div>
             <div class="cont-card-proyecto">
-                <img src="/img/fisy.png" alt="" class="imagen-proyectos">
+                <a href="https://www.behance.net/gallery/127199447/UI-Challenge-Sign-Up" target="_blank">
+                    <img src="/img/fisy.png" alt="" class="imagen-proyectos">
+                </a>
                 <ul class="lista-proyectos">
                     <p class="titulo-lista">UI challenge - signup</p>
                     <li class="item-lista-proyectos">
@@ -221,10 +218,14 @@
                         voluptas?
                     </li>
                 </ul>
-                <img src="/img/Fresh.png" alt="" class="imagen-proyectos">
+                <a href="https://www.behance.net/gallery/127160887/Daily-Ui-challenge-Fresh" target="_blank">
+                    <img src="/img/Fresh.png" alt="" class="imagen-proyectos">
+                </a>
             </div>
             <div class="cont-card-proyecto">
-                <img src="/img/Card.png" alt="" class="imagen-proyectos">
+                <a href="https://www.behance.net/gallery/127333707/UI-challenge-credit-card-checkout" target="_blank">
+                    <img src="/img/Card.png" alt="" class="imagen-proyectos">
+                </a>
                 <ul class="lista-proyectos">
                     <p class="titulo-lista">UI challenge - checkout</p>
                     <li class="item-lista-proyectos">
@@ -237,10 +238,127 @@
                     </li>
                 </ul>
             </div>
+            <div class="cont-card-proyecto">
+                <ul class="lista-proyectos-izquierda">
+                    <p class="titulo-lista">UX/UI Research - App</p>
+                    <li class="item-lista-proyectos">
+                        autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident dolor
+                        velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed atque
+                        error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+                <a href="https://www.behance.net/gallery/119670429/La-Previa-Coderhouse-Proyecto-Final-UXUI" target="_blank">
+                    <img src="/img/ux-research.png" alt="" class="imagen-proyectos">
+                </a>
+            </div>
         </section>
+
+        <!-- Proyectos verisón mobile -->
+        <section class="proyectos-mobile">
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://lavarellocambaceresmarcos.github.io/eugeniasorgetti/" target="_blank">
+                    <img src="/img/sorgetti.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">Portfolio web de diseño</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://lavarellocambaceresmarcos.github.io/laprevia.com/" target="_blank">
+                    <img src="/img/laprevia.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">Ecommerce de bebidas</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://www.behance.net/gallery/127199447/UI-Challenge-Sign-Up" target="_blank">
+                    <img src="/img/fisy.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">UI challenge - signup</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://www.behance.net/gallery/127160887/Daily-Ui-challenge-Fresh" target="_blank">
+                    <img src="/img/Fresh.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">UI challenge - FAQ</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://www.behance.net/gallery/127333707/UI-challenge-credit-card-checkout" target="_blank">
+                    <img src="/img/Card.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">UI challenge - checkout</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+            <div class="proyectos-mobile__div-cont">
+                <a href="https://www.behance.net/gallery/119670429/La-Previa-Coderhouse-Proyecto-Final-UXUI" target="_blank">
+                    <img src="/img/ux-research.png" alt="" class="proyectos-mobile__img">
+                </a>
+                <ul class="proyectos-mobile__lista">
+                    <p class="proyectos-mobile__titulo">UX/UI Research - App</p>
+                    <li class="proyectos-mobile__item-lista">
+                        pturi, autem dolorem error reiciendis, perferendis deleniti et labore voluptates minima provident
+                        dolor velit! Accusantium temporibus est, praesentium ut commodi a sequi id sit porro explicabo, sed
+                        atque error.
+                        Excepturi libero harum nihil vitae a quas velit accusamus quos odit nostrum, laudantium soluta
+                        earum. Ut nemo nihil illum, libero natus at fuga hic, fugiat molestias eveniet facilis sequi
+                        voluptas?
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section class="cont-encabezados-1 cont-herramientas">
             <div>   
-                <h2 class="herramientas">Experiencia</h2>
+                <h2 class="herramientas" id="experiencia">Experiencia</h2>
             </div>
             <hr class="barra-1">
         </section>
@@ -260,7 +378,7 @@
                     odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                      voluptatem sequi nesciunt. Neque porro quisquam est.
                 </li>
-                <p class="encab-list">CLASES PARTICULARES DE DESARROLLO WEB</p>
+                <p class="encab-list">CLASES DE DESARROLLO WEB</p>
                 <p class="encab-list-2">Freelance | Agosto 2021 - presente</p>
                 <li>
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
@@ -272,24 +390,24 @@
     </main>
     <footer>    
         <section class="cont-contactame" id="cont-contacto-linea">
-            <h2 class="contacto">Contacto</h2>
+            <h2 class="contacto" id="contacto">Contacto</h2>
             <hr class="barra-2">
         </section>
         <section class="cont-listas-contacto">
             <ul class="lista-cont-1">
                 <li>
-                    <i class="fab fa-github"></i> <a href="">Github</a>
+                    <i class="fab fa-github"></i> <a href="https://github.com/" target="_blank">Github</a>
                 </li>
                 <li>
-                    <i class="fab fa-behance-square"></i> <a href="">Behance</a>
+                    <i class="fab fa-behance-square"></i> <a href="https://www.behance.net/marcoslavarel" target="_blank">Behance</a>
                 </li>
             </ul>
             <ul class="lista-cont-2">
                 <li>
-                    <i class="fas fa-envelope"></i> <a href="">Gmail</a>
+                    <i class="fas fa-envelope"></i> <a href="mailto:lavarellomarcos@gmail.com" target="_blank">Gmail</a>
                 </li>
                 <li>
-                    <i class="fab fa-linkedin"></i> <a href="">Linkedin</a>
+                    <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/marcoslavarellocambaceres/" target="_blank">Linkedin</a>
                 </li>
             </ul>
         </section>
@@ -317,7 +435,6 @@
                     <div>
                         <button type="submit" class="btn-form">Enviar</button>
                     </div>
-    
                 </form>
             </fieldset>
         </section>
