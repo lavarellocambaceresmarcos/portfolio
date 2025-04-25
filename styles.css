@@ -760,7 +760,7 @@ main {
   width: 120px;
 }
 
-.cont-form h1 {
+.cont-form h2 {
   font-size: 90px;
   font-weight: 400;
   color: var(--white-color);
@@ -1057,6 +1057,9 @@ figure.snip1477.hover figcaption {
 .mvp-main-container {
   width: 100%;
 }
+.mvp-main-container h2 {
+  margin-bottom: 50px;
+}
 
 .main-projects_container {
   display: flex;
@@ -1081,12 +1084,11 @@ figure.snip1477.hover figcaption {
 
 .project_cards-container li {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 80vw;
-  height: 150px;
+  height: 100px;
   padding: 15px;
   background-color: #dbdbdb;
-  gap: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1133,6 +1135,10 @@ figure.snip1477.hover figcaption {
 
 .project_cards-container li:nth-child(4) {
   transform: translateZ(50px) translateY(-75px);
+  background: #eee;
+}
+.project_cards-container li:nth-child(5) {
+  transform: translateZ(75px) translateY(-100px);
   background: #eee;
 }
 
@@ -1214,6 +1220,44 @@ figure.snip1477.hover figcaption {
   object-fit: cover;
   padding: 10px;
   background-color: #4e4e4e23;
+}
+
+.main_design_container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.design_box {
+  height: 300px;
+  width: max-content;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(131, 131, 131, 0.808);
+}
+.design_box p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: var(--white-color);
+  width: 100%;
+  padding: 10px 0;
+  background-color: #0000005a;
+  font-weight: 400;
+}
+.design_box:hover img {
+  transform: translateY(calc(-100% + 300px));
+}
+
+.design_box img {
+  width: 400px;
+  transition: all 10s ease;
 }
 
 /************************* FOOTER STYLES ************************/
@@ -1431,6 +1475,153 @@ main {
 
 /* Media querys */
 /* styles and querys related to the hamburguer menu button */
+
+@media screen and (max-width: 720px) {
+  .main-about-title {
+    text-align: center;
+  }
+  .cont-form h2 {
+    font-size: 40px;
+  }
+  .about-cont {
+    margin: 0;
+  }
+
+  .referals-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .current-position-container {
+    transform: translateY(150px);
+  }
+
+  .media-main-container img {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .footer-contact-links a {
+    flex: auto;
+    font-size: 14px;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  footer .social ul {
+    justify-content: flex-start;
+  }
+
+  .secondary-circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .mvp-project-box h4 {
+    font-size: 20px;
+  }
+  form .hover-this {
+    width: 100%;
+  }
+  .footer-contact-links {
+    flex-direction: column;
+  }
+  .contact-main-section {
+    margin-bottom: 50px;
+  }
+  .fold-content-two .gallery-content-two {
+    transform: translateX(-160%);
+  }
+  .footer-content {
+    width: auto;
+  }
+
+  .current-position-container p {
+    font-size: 16px;
+  }
+
+  .location-container {
+    height: 65px;
+    transform: translateY(110px);
+  }
+
+  .main-content {
+    margin-top: 50px;
+  }
+
+  .nav_links ul li {
+    margin-right: 10px;
+  }
+
+  .companys-info-container {
+    flex-direction: column;
+  }
+
+  .top-compbox-content,
+  .date-container {
+    align-items: center;
+  }
+
+  .about-main {
+    padding: 0 20px;
+  }
+
+  .about-picture-line-container {
+    margin-top: 50px;
+  }
+
+  .main-about-title h1 {
+    font-size: 3rem;
+  }
+
+  .hero-section-about {
+    padding-top: 150px;
+  }
+  #home-body .project_cards-container li p span {
+    display: none;
+  }
+  #home-body .project_cards-container li:hover p,
+  #home-body .project_cards-container li:hover h4 {
+    color: var(--dark-color);
+  }
+  #home-body .project_cards-container li {
+    opacity: 1;
+    background: #fff;
+    transform: translateZ(0px) translateY(0px);
+  }
+  .project_cards-container {
+    gap: 20px;
+  }
+  .project_cards-container li {
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .companys_container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
+  #tab1 .work-meth-cont {
+    display: none;
+  }
+
+  .contact-info-section {
+    display: none;
+  }
+
+  .cont-form {
+    margin: 0;
+  }
+
+  .contact-main-section {
+    flex-direction: column-reverse;
+  }
+  .right-info-container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .hamburger_menu_button {
     display: flex;
@@ -1534,120 +1725,5 @@ main {
 
   .copy-right {
     font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  #tab1 .work-meth-cont {
-    display: none;
-  }
-
-  .contact-info-section {
-    display: none;
-  }
-
-  .cont-form {
-    margin: 0;
-  }
-
-  .contact-main-section {
-    flex-direction: column-reverse;
-  }
-  .right-info-container {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 760px) {
-  .companys_container {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 720px) {
-  .about-cont {
-    margin: 0;
-  }
-
-  .referals-main-container {
-    grid-template-columns: 1fr;
-  }
-
-  .current-position-container {
-    transform: translateY(150px);
-  }
-
-  .media-main-container img {
-    width: 200px;
-    padding: 15px;
-  }
-
-  .footer-contact-links a {
-    flex: auto;
-    font-size: 14px;
-  }
-
-  .social {
-    flex-direction: column;
-  }
-
-  footer .social ul {
-    justify-content: flex-start;
-  }
-
-  .secondary-circle {
-    height: 150px;
-    width: 150px;
-  }
-
-  .mvp-project-box h4 {
-    font-size: 20px;
-  }
-
-  .footer-contact-links {
-    flex-direction: column;
-  }
-
-  .footer-content {
-    width: auto;
-  }
-
-  .current-position-container p {
-    font-size: 16px;
-  }
-
-  .location-container {
-    height: 65px;
-    transform: translateY(110px);
-  }
-
-  .main-content {
-    margin-top: 50px;
-  }
-
-  .nav_links ul li {
-    margin-right: 10px;
-  }
-
-  .companys-info-container {
-    flex-direction: column;
-  }
-
-  .top-compbox-content,
-  .date-container {
-    align-items: center;
-  }
-
-  .about-main {
-    padding: 0 20px;
-  }
-
-  .about-picture-line-container {
-    margin-top: 50px;
-  }
-
-  .main-about-title h1 {
-    font-size: 3rem;
-  }
-
-  .hero-section-about {
-    padding-top: 150px;
   }
 }
