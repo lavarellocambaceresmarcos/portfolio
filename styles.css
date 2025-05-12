@@ -1000,6 +1000,7 @@ figure.snip1477.hover figcaption {
 .project_cards-container .project_card:hover a .content p,
 .project_cards-container .project_card:hover a .content span {
   color: #fff;
+  font-weight: 600;
 }
 .project_cards-container li a {
   display: flex;
