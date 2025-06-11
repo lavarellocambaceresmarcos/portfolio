@@ -945,15 +945,13 @@ figure.snip1477.hover figcaption {
 .mvp-main-container {
   width: 100%;
 }
-.mvp-main-container h2 {
-  margin-bottom: 50px;
-}
 
 .main-projects_container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
+  margin-bottom: 100px;
 }
 
 .project_cards-container {
@@ -1028,6 +1026,10 @@ figure.snip1477.hover figcaption {
 }
 .project_cards-container li:nth-child(5) {
   transform: translateZ(75px) translateY(-100px);
+  background: #eee;
+}
+.project_cards-container li:nth-child(6) {
+  transform: translateZ(90px) translateY(-125px);
   background: #eee;
 }
 
